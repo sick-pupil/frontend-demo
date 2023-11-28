@@ -1,37 +1,40 @@
-<!-- <script setup> -->
-// import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+</script>
+<!--
 <script>
   export default {
-      data() {
-          return {
-              num: 0,
-              uname: 'a.b.c.d',
-              msg: '<p>aaaaa</p>',
-              imgUrl: 'https://i1.hdslb.com/bfs/archive/c201957d5aa4e2cdef4449f4e4018288f4655897.png',
-              attrName: '',
-              id: 'abc',
-              json: {
-                prop1: 'aaa',
-                prop2: 'bbb'
-              },
-              message: 'a,b,c,d,e,f,g'
-          }
-      },
-      methods: {
-        changeName: function() {
-          this.uname = '李四'
-        }
-      },
-      computed: {
-        reverseMsg: function() {
-          return this.message.split(',').reverse().join(':')
-        }
+    data() {
+      return {
+        num: 0,
+        uname: 'a.b.c.d',
+        msg: '<p>aaaaa</p>',
+        imgUrl: 'https://i1.hdslb.com/bfs/archive/c201957d5aa4e2cdef4449f4e4018288f4655897.png',
+        attrName: '',
+        id: 'abc',
+        json: {
+          prop1: 'aaa',
+          prop2: 'bbb'
+        },
+        message: 'a,b,c,d,e,f,g'
       }
+    },
+    methods: {
+      changeName: function() {
+        this.uname = '李四'
+      }
+    },
+    computed: {
+      reverseMsg: function() {
+        return this.message.split(',').reverse().join(':')
+      }
+    }
   }
 </script>
+-->
 
 <template>
-  <!-- <div>
+  <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -39,7 +42,8 @@
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" /> -->
+  <HelloWorld msg="Vite + Vue" />
+  <!--
   <div>
     <p>{{ num }}</p>
     <p>{{ uname }}</p>
@@ -55,6 +59,7 @@
     <p v-bind='json'>hhhh</p>
     <p>{{ reverseMsg }}</p>
   </div>
+  -->
 </template>
 
 <style scoped>
